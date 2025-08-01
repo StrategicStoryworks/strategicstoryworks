@@ -17,20 +17,20 @@ const Hero = () => {
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-primary-foreground mb-6 leading-tight">
-            When Your School District's{" "}
+            Transforming Educational Communication,{" "}
             <span className="bg-gradient-to-r from-accent to-accent/80 bg-clip-text text-transparent">
-              Story Matters Most
+              One District at a Time
             </span>
           </h1>
           
           <p className="text-xl md:text-2xl text-primary-foreground/90 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Expert communications guidance for superintendents and board members who understand that 
-            every message impacts the children we serve and the communities that support public education.
+            Strategic Storyworks bridges the communication gap, transforming how school districts 
+            connect, engage, and inspire their communities with data-driven strategies and proven methodologies.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button variant="accent" size="lg" className="text-lg px-8 py-6">
-              Let's Talk
+              Schedule Your Communication Assessment
               <ArrowRight className="ml-2" size={20} />
             </Button>
             <Button variant="outline" size="lg" className="text-lg px-8 py-6 bg-white/10 border-white/30 text-white hover:bg-white/20">

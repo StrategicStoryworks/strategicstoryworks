@@ -5,33 +5,33 @@ import { TrendingUp, Heart, Award, Zap, Globe, Users } from "lucide-react";
 const reasons = [
   {
     icon: TrendingUp,
-    title: "We Understand the Stakes",
-    description: "With experience managing high-pressure media situations and crisis communications, we know how quickly situations can escalate—and how to prevent that from happening."
+    title: "Data-Driven Excellence",
+    description: "Every strategy we develop is backed by research, analytics, and proven methodologies. We transform communication from guesswork to strategic advantage."
   },
   {
     icon: Heart,
-    title: "Kids Come First",
-    description: "Every strategy we develop starts with student welfare. We help you communicate in ways that strengthen public education and support student success."
+    title: "Educational Focus",
+    description: "We specialize exclusively in educational communications, bringing deep understanding of district dynamics, stakeholder needs, and community expectations."
   },
   {
     icon: Award,
-    title: "Proven Expertise",
-    description: "Award-winning professionals with journalism, crisis counseling, and school communications backgrounds who understand your unique challenges."
+    title: "Proven Track Record",
+    description: "Our methodologies have been tested across diverse districts, delivering consistent results and measurable improvements in communication effectiveness."
   },
   {
     icon: Zap,
-    title: "Flexible Partnership",
-    description: "Whether you need embedded support, project-based help, or ongoing strategic guidance, we adapt our services to your district's needs and budget."
+    title: "Customized Solutions",
+    description: "We understand that every district is unique. Our solutions are tailored to your specific community, challenges, budget, and goals."
   },
   {
     icon: Globe,
-    title: "National Reach, Local Focus",
-    description: "We serve districts nationwide while understanding that every community is unique. Your local context shapes every recommendation we make."
+    title: "Comprehensive Support",
+    description: "From strategic planning to crisis management, we provide end-to-end communication support, ensuring consistency and reliability across all initiatives."
   },
   {
     icon: Users,
-    title: "Public Education Champions",
-    description: "We're passionate advocates for public schools who understand the vital role they play in our communities and our democracy."
+    title: "Partnership Approach",
+    description: "We work as an extension of your team, building internal capacity while providing expert guidance and support when you need it most."
   }
 ];
 
@@ -75,17 +75,17 @@ const WhyUsSection = () => {
         <div className="text-center">
           <div className="bg-gradient-to-r from-primary to-primary-glow rounded-2xl p-8 md:p-12 text-white">
             <h3 className="text-2xl md:text-3xl font-bold mb-4">
-              Ready to Transform Your Communications?
+              Ready to Transform Your District's Communication?
             </h3>
             <p className="text-xl mb-6 opacity-90 max-w-3xl mx-auto">
-              Your district's story matters. Your students deserve communications that support their success. 
-              Your community needs to understand the incredible work happening in public schools every day.
+              Your district deserves communication strategies that work. Your community needs clear, consistent messaging 
+              that builds trust and supports educational excellence.
             </p>
             <p className="text-lg mb-8 opacity-80">
-              Let's talk about how Strategic Storyworks can help you tell that story with clarity, confidence, and care.
+              Let's discuss how Strategic Storyworks can help you bridge the communication gap and transform your district's storytelling.
             </p>
             <Button variant="accent" size="lg" className="text-lg px-8 py-6">
-              Get in Touch
+              Schedule Your Communication Assessment
             </Button>
           </div>
         </div>

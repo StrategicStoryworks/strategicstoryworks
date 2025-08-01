@@ -3,44 +3,44 @@ import { AlertCircle, Calendar, Target, Shield, Share2, Users, Rocket, FileText 
 
 const services = [
   {
+    icon: Target,
+    title: "Strategic Communication Planning",
+    description: "Comprehensive long-term communication strategies aligned with your district's goals and community needs."
+  },
+  {
     icon: AlertCircle,
-    title: "Crisis Communications",
-    description: "Rapid response protocols, message templates, spokesperson training, and real-time crisis management to protect your district's reputation when it matters most."
+    title: "Crisis Communication Management",
+    description: "Rapid response protocols and crisis preparation to protect your district's reputation when it matters most."
   },
   {
     icon: Calendar,
-    title: "Emergency Planning",
-    description: "Comprehensive communication plans for every scenario, from weather emergencies to security incidents, ensuring your team is prepared before crisis strikes."
+    title: "Emergency Communication Planning",
+    description: "Comprehensive communication plans for every emergency scenario, ensuring your team is prepared before crisis strikes."
   },
   {
-    icon: Target,
-    title: "Strategic Planning",
-    description: "Long-term communication strategies aligned with your district's goals, building proactive messaging that strengthens community support for public education."
+    icon: Users,
+    title: "Community Engagement Campaigns",
+    description: "Strategic outreach that builds lasting relationships between your district and the communities you serve."
   },
   {
     icon: Shield,
     title: "Reputation Management",
-    description: "Monitoring, responding to, and shaping your district's online presence to ensure accurate information reaches your stakeholders first."
+    description: "Monitoring, responding to, and shaping your district's online presence to ensure accurate information reaches stakeholders first."
   },
   {
     icon: Share2,
-    title: "Social Media Campaigns",
-    description: "Engaging content strategies that showcase student achievements, highlight excellent teaching, and build pride in your public schools."
-  },
-  {
-    icon: Users,
-    title: "Employee Appreciation",
-    description: "Internal communication strategies that boost morale, reduce turnover, and help your team feel valued during challenging times."
-  },
-  {
-    icon: Rocket,
-    title: "Program Launches",
-    description: "Coordinated rollouts for new initiatives that build stakeholder buy-in and ensure your innovations get the recognition they deserve."
+    title: "Social Media Strategy",
+    description: "Engaging content strategies that showcase student achievements, highlight excellent teaching, and build community pride."
   },
   {
     icon: FileText,
-    title: "Print Campaigns",
-    description: "Traditional outreach materials that reach every family, ensuring equitable access to important district information regardless of digital connectivity."
+    title: "Print and Digital Campaigns",
+    description: "Multi-channel outreach materials that ensure equitable access to important district information."
+  },
+  {
+    icon: Rocket,
+    title: "Program Launch Communications",
+    description: "Coordinated rollouts for new initiatives that build stakeholder buy-in and ensure your innovations get recognition."
   }
 ];
 
@@ -50,11 +50,11 @@ const ServicesSection = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
-            How We Support Your{" "}
-            <span className="text-primary">District's Success</span>
+            Comprehensive Communication{" "}
+            <span className="text-primary">Solutions</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Comprehensive communication services designed specifically for the unique challenges facing today's educational leaders.
+            Strategic, data-driven communication services designed to transform how your district connects with its community.
           </p>
         </div>
 

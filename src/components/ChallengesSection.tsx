@@ -1,36 +1,31 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { AlertTriangle, Share2, Users, MessageSquare, Target, Zap } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { TrendingUp, Users, Award, MessageSquareWarning } from "lucide-react";
 
-const challenges = [
+const valuePropositions = [
   {
-    icon: AlertTriangle,
-    title: "Crisis Communication Failures",
-    description: "When emergencies strike, minutes matter. Poor crisis communication can destroy years of trust-building and put your district's reputation—and student safety—at risk."
-  },
-  {
-    icon: Share2,
-    title: "Disinformation & Misinformation Spread",
-    description: "False narratives spread faster than facts on social media. You need strategic messaging that cuts through the noise with truth and transparency."
+    icon: TrendingUp,
+    title: "Data-Driven Strategies",
+    description: "Every recommendation is backed by research and metrics, ensuring your communication efforts deliver measurable results.",
+    impact: "Transform communication from guesswork to strategic advantage."
   },
   {
     icon: Users,
-    title: "Board-Superintendent Relationship Breakdowns",
-    description: "When board dynamics become dysfunctional, student outcomes suffer. Poor communication between leadership creates instability and damages staff morale."
+    title: "Customized Communication Solutions", 
+    description: "We understand that every district is unique. Our solutions are tailored to your specific community, challenges, and goals.",
+    impact: "Get strategies that fit your district's culture and needs perfectly."
   },
   {
-    icon: MessageSquare,
-    title: "Parent Engagement Challenges",
-    description: "Fragmented communication channels leave parents overwhelmed and underinformed, weakening community support for public schools."
+    icon: Award,
+    title: "Proven Methodologies",
+    description: "Our frameworks have been tested across diverse districts, from urban to rural, small to large, delivering consistent results.",
+    impact: "Leverage time-tested approaches that work in real-world educational environments."
   },
   {
-    icon: Target,
-    title: "Lack of Strategic Planning",
-    description: "Reactive communications put you constantly on defense. Without proactive messaging strategies, your district becomes vulnerable to external pressures."
-  },
-  {
-    icon: Zap,
-    title: "Resource Constraints & Burnout",
-    description: "Communications staff are stretched thin, managing everything from social media to crisis response without strategic support."
+    icon: MessageSquareWarning,
+    title: "Comprehensive Support",
+    description: "From strategic planning to crisis management, we provide end-to-end communication support for every scenario.",
+    impact: "One partner for all your communication needs, ensuring consistency and reliability."
   }
 ];
 
@@ -40,41 +35,65 @@ const ChallengesSection = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
-            The Communication Challenges 
-            <span className="text-primary block">Keeping You Up at Night</span>
+            The Communication{" "}
+            <span className="text-primary">Challenge</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Every day, school districts face these challenges while trying to focus on what matters most: educating children.
+          <p className="text-xl text-muted-foreground max-w-4xl mx-auto mb-8">
+            In an era of information overload and evolving educational landscapes, school districts face unprecedented communication challenges.
           </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+            <div className="text-center">
+              <div className="text-4xl font-bold text-primary mb-2">47.5%</div>
+              <p className="text-muted-foreground">of families want weekly updates on their child's performance</p>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl font-bold text-primary mb-2">40%</div>
+              <p className="text-muted-foreground">receive regular guidance on supporting academic success</p>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl font-bold text-primary mb-2">83%</div>
+              <p className="text-muted-foreground">of school communicators struggle with message overload</p>
+            </div>
+          </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {challenges.map((challenge, index) => {
-            const IconComponent = challenge.icon;
-            return (
-              <Card key={index} className="h-full hover:shadow-elegant transition-all duration-300 border-0 shadow-md">
-                <CardContent className="p-6">
-                  <div className="flex items-center mb-4">
-                    <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mr-4">
-                      <IconComponent className="w-6 h-6 text-primary" />
-                    </div>
-                    <h3 className="text-xl font-semibold text-foreground">
-                      {challenge.title}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+          {valuePropositions.map((proposition, index) => (
+            <Card key={index} className="h-full border-0 shadow-lg hover:shadow-elegant transition-all duration-300">
+              <CardContent className="p-8">
+                <div className="flex items-start mb-6">
+                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                    <proposition.icon className="w-6 h-6 text-primary" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-foreground mb-3">
+                      {proposition.title}
                     </h3>
                   </div>
-                  <p className="text-muted-foreground leading-relaxed">
-                    {challenge.description}
+                </div>
+                <p className="text-muted-foreground mb-4 leading-relaxed">
+                  {proposition.description}
+                </p>
+                <div className="bg-primary/5 rounded-lg p-4 border-l-4 border-primary">
+                  <p className="text-primary font-medium text-sm">
+                    {proposition.impact}
                   </p>
-                </CardContent>
-              </Card>
-            );
-          })}
+                </div>
+              </CardContent>
+            </Card>
+          ))}
         </div>
 
-        <div className="text-center mt-12">
-          <p className="text-xl text-foreground font-medium">
-            Sound familiar? You're not alone.
+        <div className="text-center bg-gradient-to-r from-primary/5 to-primary-glow/5 rounded-2xl p-8 md:p-12">
+          <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
+            Our Promise
+          </h3>
+          <p className="text-lg text-muted-foreground mb-6 max-w-3xl mx-auto">
+            Strategic Storyworks bridges the communication gap, transforming how school districts connect, engage, and inspire their communities.
           </p>
+          <Button variant="default" size="lg">
+            Schedule Your Communication Assessment
+          </Button>
         </div>
       </div>
     </section>
