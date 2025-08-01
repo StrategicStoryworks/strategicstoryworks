@@ -18,7 +18,7 @@ const valuePropositions = [
   {
     icon: Award,
     title: "Proven Methodologies",
-    description: "Our frameworks have been tested across diverse districts, from urban to rural, small to large, delivering consistent results.",
+    description: "Our frameworks are use-tested across diverse districts, from urban to rural, small to large, delivering consistent results.",
     impact: "Leverage time-tested approaches that work in real-world educational environments."
   },
   {
@@ -46,36 +46,36 @@ const ChallengesSection = () => {
               <div className="text-4xl font-bold text-primary mb-2">47.5%</div>
               <p className="text-muted-foreground">of families want weekly updates on their child's performance</p>
               <a 
-                href="https://www.districtadministration.com/pr-newswire/" 
+                href="https://www.schoolstatus.com/wp-content/uploads/SchoolStatus-2024EducatorReport-101824.pdf" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-xs text-primary hover:underline mt-1 block"
               >
-                Source: PR Newswire/District Administration
+                Source: SchoolStatus survey
               </a>
             </div>
             <div className="text-center">
               <div className="text-4xl font-bold text-primary mb-2">40%</div>
-              <p className="text-muted-foreground">receive regular guidance on supporting academic success</p>
+              <p className="text-muted-foreground">reported receiving regular guidance on supporting academic success</p>
               <a 
-                href="#" 
+                href="https://www.schoolstatus.com/resource/download-engagement-trends-in-school-family-communications" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-xs text-primary hover:underline mt-1 block"
               >
-                Source: National K-12 Family Communication Survey
+                Source: National SchoolStatus K-12 Family Communication Survey
               </a>
             </div>
             <div className="text-center">
               <div className="text-4xl font-bold text-primary mb-2">83%</div>
-              <p className="text-muted-foreground">of school communicators struggle with message overload</p>
+              <p className="text-muted-foreground">of school communicators report struggle with message overload</p>
               <a 
-                href="#" 
+                href="https://www.datiak12.io/research/article/15742490/from-crisis-to-connection-new-report-shows-school-districts-are-reshaping-communication-strategies-in-a-postpandemic-world" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-xs text-primary hover:underline mt-1 block"
               >
-                Source: Crisis to Connection Report
+                Source: NSPRA 2024 Profile of a School Communicator
               </a>
             </div>
           </div>
@@ -113,7 +113,7 @@ const ChallengesSection = () => {
             Our Promise
           </h3>
           <p className="text-lg text-muted-foreground mb-6 max-w-3xl mx-auto">
-            Strategic Storyworks bridges the communication gap, transforming how school districts connect, engage, and inspire their communities.
+            Strategic Storyworks helps bridge the communication gap, transforming how school districts connect, engage, and inspire their communities.
           </p>
           <Button variant="default" size="lg">
             Schedule Your Communication Assessment
