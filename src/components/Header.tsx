@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,12 +17,12 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="/services" className="text-foreground hover:text-primary transition-colors">
+            <Link to="/services" className="text-foreground hover:text-primary transition-colors">
               Services
-            </a>
-            <a href="#why-us" className="text-foreground hover:text-primary transition-colors">
+            </Link>
+            <Link to="/why-us" className="text-foreground hover:text-primary transition-colors">
               Why Us
-            </a>
+            </Link>
             <a href="#contact" className="text-foreground hover:text-primary transition-colors">
               Contact
             </a>
@@ -47,20 +48,20 @@ const Header = () => {
         {/* Mobile Navigation */}
         {isMenuOpen && (
           <div className="md:hidden py-4 space-y-4 border-t border-border">
-            <a
-              href="/services"
+            <Link
+              to="/services"
               className="block text-foreground hover:text-primary transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               Services
-            </a>
-            <a
-              href="#why-us"
+            </Link>
+            <Link
+              to="/why-us"
               className="block text-foreground hover:text-primary transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               Why Us
-            </a>
+            </Link>
             <a
               href="#contact"
               className="block text-foreground hover:text-primary transition-colors"
