@@ -3,58 +3,50 @@ import Footer from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { 
-  Shield, Users, Award, Target, TrendingUp, Heart,
-  CheckCircle, Star, Lightbulb, MessageSquare
+  Users, Award, Target, Heart, Lightbulb, Shield,
+  Network, Briefcase, MessageSquare, CheckCircle
 } from "lucide-react";
 
 const reasons = [
   {
-    icon: Shield,
-    title: "Proven Track Record",
-    description: "We've helped dozens of school districts navigate complex communication challenges, from crisis management to community engagement campaigns."
+    icon: Network,
+    title: "Network of Seasoned Professionals",
+    description: "We're a carefully curated network of communication experts, each bringing years of specialized experience in education, public relations, and strategic communications."
   },
   {
     icon: Users,
     title: "Education-Focused Expertise", 
-    description: "Our team understands the unique challenges facing public education. We don't just apply generic communication strategies—we craft solutions specifically for school districts."
+    description: "Our team understands the unique challenges facing public education. We don't apply generic strategies—we craft solutions specifically for school districts and educational organizations."
   },
   {
     icon: Award,
-    title: "Data-Driven Approach",
-    description: "Every strategy is backed by research and real-world data. We measure success through meaningful metrics that matter to your community."
+    title: "Proven Professional Background",
+    description: "Our network includes former superintendents, communications directors, PR professionals, and education advocates who bring real-world experience to every project."
   },
   {
     icon: Target,
-    title: "Strategic Partnership",
-    description: "We become an extension of your team, working collaboratively to achieve your district's communication goals and build lasting community trust."
-  },
-  {
-    icon: TrendingUp,
-    title: "Measurable Results",
-    description: "Our clients see improved community engagement, increased trust levels, and more effective communication outcomes that support student success."
+    title: "Strategic Partnership Approach",
+    description: "We work as an extension of your team, collaborating closely to understand your district's unique context, challenges, and goals before developing tailored solutions."
   },
   {
     icon: Heart,
-    title: "Passionate About Public Education",
-    description: "We believe deeply in the mission of public education. Every strategy we develop is designed to strengthen public schools and support student achievement."
-  }
-];
-
-const testimonials = [
-  {
-    quote: "Strategic Storyworks transformed how our district communicates with families. Their data-driven approach helped us increase family engagement by 40%.",
-    author: "Dr. Sarah Johnson",
-    role: "Superintendent, Metro Valley School District"
+    title: "Genuine Commitment to Public Education",
+    description: "We believe deeply in the mission of public education. Every strategy we develop is designed to strengthen public schools and support student success."
   },
   {
-    quote: "During our bond campaign, their strategic communication plan was instrumental in securing community support. The campaign passed with 68% approval.",
-    author: "Mark Rodriguez",
-    role: "Board President, Riverside Unified"
+    icon: Shield,
+    title: "Comprehensive Service Range",
+    description: "From crisis communication to community engagement, brand development to digital strategy—our network covers the full spectrum of communication needs."
   },
   {
-    quote: "Their crisis communication framework gave us confidence during challenging times. We maintained community trust when it mattered most.",
-    author: "Jennifer Chen",
-    role: "Communications Director, Eastside Schools"
+    icon: Briefcase,
+    title: "Professional Excellence",
+    description: "We maintain high standards in every project, bringing professional rigor, ethical practices, and quality outcomes to all our communication work."
+  },
+  {
+    icon: CheckCircle,
+    title: "Transparent and Collaborative",
+    description: "We believe in clear communication about our processes, realistic timelines, and honest assessments of what communication strategies can and cannot achieve."
   }
 ];
 
@@ -72,8 +64,8 @@ const WhyUs = () => {
               <span className="text-primary">Strategic Storyworks?</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
-              We're more than consultants—we're passionate advocates for public education with the expertise 
-              to help your district communicate effectively and build lasting community trust.
+              We're a network of experienced communication professionals dedicated to supporting public education 
+              through strategic, thoughtful, and effective communication solutions.
             </p>
           </div>
         </div>
@@ -84,15 +76,15 @@ const WhyUs = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-              What Sets Us Apart
+              What Sets Our Network Apart
             </h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              Our unique combination of education expertise, strategic thinking, and proven results 
-              makes us the ideal partner for your district's communication needs.
+              We bring together talented professionals who understand education and excel at communication. 
+              Our collaborative approach ensures you get the right expertise for your specific needs.
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
             {reasons.map((reason, index) => {
               const IconComponent = reason.icon;
               return (
@@ -120,100 +112,65 @@ const WhyUs = () => {
         </div>
       </section>
 
-      {/* Results Section */}
+      {/* Our Approach Section */}
       <section className="py-20 bg-gradient-to-br from-primary/5 to-primary-glow/5">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-              Proven Results That Matter
+              Our Professional Approach
             </h2>
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              Our strategic approach delivers measurable improvements in communication effectiveness and community engagement.
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto mb-12">
+              We combine strategic thinking with practical execution, always keeping your district's 
+              unique context and goals at the center of our work.
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
-                <TrendingUp className="w-8 h-8 text-primary-foreground" />
+              <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
+                <Lightbulb className="w-8 h-8 text-primary-foreground" />
               </div>
-              <div className="text-3xl md:text-4xl font-bold text-primary mb-2">85%</div>
-              <p className="text-muted-foreground">Average improvement in community engagement metrics</p>
+              <h3 className="text-xl font-bold text-foreground mb-4">Strategic Thinking</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                We start with understanding your goals, challenges, and community context before developing 
+                communication strategies that align with your district's mission.
+              </p>
             </div>
             
             <div className="text-center">
-              <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
-                <CheckCircle className="w-8 h-8 text-primary-foreground" />
-              </div>
-              <div className="text-3xl md:text-4xl font-bold text-primary mb-2">92%</div>
-              <p className="text-muted-foreground">Client satisfaction rate across all projects</p>
-            </div>
-            
-            <div className="text-center">
-              <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
-                <Star className="w-8 h-8 text-primary-foreground" />
-              </div>
-              <div className="text-3xl md:text-4xl font-bold text-primary mb-2">40+</div>
-              <p className="text-muted-foreground">School districts successfully supported</p>
-            </div>
-            
-            <div className="text-center">
-              <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
                 <MessageSquare className="w-8 h-8 text-primary-foreground" />
               </div>
-              <div className="text-3xl md:text-4xl font-bold text-primary mb-2">78%</div>
-              <p className="text-muted-foreground">Average increase in positive community sentiment</p>
+              <h3 className="text-xl font-bold text-foreground mb-4">Clear Communication</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                We practice what we preach—maintaining transparent, regular communication throughout our 
+                partnership so you always know what to expect.
+              </p>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonials Section */}
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-              What Our Clients Say
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              Don't just take our word for it—hear from the education leaders we've partnered with.
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {testimonials.map((testimonial, index) => (
-              <Card key={index} className="h-full border-0 shadow-lg hover:shadow-elegant transition-all duration-300">
-                <CardContent className="p-6">
-                  <div className="mb-4">
-                    <Star className="w-5 h-5 text-primary fill-current inline mr-1" />
-                    <Star className="w-5 h-5 text-primary fill-current inline mr-1" />
-                    <Star className="w-5 h-5 text-primary fill-current inline mr-1" />
-                    <Star className="w-5 h-5 text-primary fill-current inline mr-1" />
-                    <Star className="w-5 h-5 text-primary fill-current inline" />
-                  </div>
-                  <p className="text-muted-foreground mb-6 italic leading-relaxed">
-                    "{testimonial.quote}"
-                  </p>
-                  <div>
-                    <p className="font-semibold text-foreground">{testimonial.author}</p>
-                    <p className="text-sm text-muted-foreground">{testimonial.role}</p>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
+            
+            <div className="text-center">
+              <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
+                <Target className="w-8 h-8 text-primary-foreground" />
+              </div>
+              <h3 className="text-xl font-bold text-foreground mb-4">Results-Focused</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                Our work is designed to achieve meaningful outcomes that support your district's 
+                communication goals and strengthen community relationships.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-primary/5 to-primary-glow/5">
+      <section className="py-20 bg-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-              Ready to Experience the Strategic Storyworks Difference?
+              Ready to Work with Our Professional Network?
             </h2>
             <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-              Let's discuss how our proven approach can strengthen your district's communication strategy.
+              Let's discuss how our network of communication professionals can support your district's goals.
             </p>
             <Button 
               variant="hero" 
