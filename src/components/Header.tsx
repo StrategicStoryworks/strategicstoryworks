@@ -16,7 +16,7 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#services" className="text-foreground hover:text-primary transition-colors">
+            <a href="/services" className="text-foreground hover:text-primary transition-colors">
               Services
             </a>
             <a href="#why-us" className="text-foreground hover:text-primary transition-colors">
@@ -25,7 +25,11 @@ const Header = () => {
             <a href="#contact" className="text-foreground hover:text-primary transition-colors">
               Contact
             </a>
-            <Button variant="hero" size="sm">
+            <Button 
+              variant="hero" 
+              size="sm"
+              onClick={() => window.location.href = 'mailto:hello@strategicstory.works'}
+            >
               Let's Talk
             </Button>
           </nav>
@@ -44,7 +48,7 @@ const Header = () => {
         {isMenuOpen && (
           <div className="md:hidden py-4 space-y-4 border-t border-border">
             <a
-              href="#services"
+              href="/services"
               className="block text-foreground hover:text-primary transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
@@ -64,7 +68,12 @@ const Header = () => {
             >
               Contact
             </a>
-            <Button variant="hero" size="sm" className="w-full">
+            <Button 
+              variant="hero" 
+              size="sm" 
+              className="w-full"
+              onClick={() => window.location.href = 'mailto:hello@strategicstory.works'}
+            >
               Let's Talk
             </Button>
           </div>

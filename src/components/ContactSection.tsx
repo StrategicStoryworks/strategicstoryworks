@@ -16,7 +16,7 @@ const ContactSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16 max-w-4xl mx-auto">
           <Card className="border-0 shadow-lg hover:shadow-elegant transition-all duration-300">
             <CardContent className="p-8 text-center">
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
@@ -27,28 +27,10 @@ const ContactSection = () => {
                 Send us a message and we'll respond within 24 hours.
               </p>
               <a 
-                href="mailto:hello@strategicstoryworks.com"
+                href="mailto:hello@strategicstory.works"
                 className="text-primary hover:text-primary-glow font-semibold transition-colors"
               >
-                hello@strategicstoryworks.com
-              </a>
-            </CardContent>
-          </Card>
-
-          <Card className="border-0 shadow-lg hover:shadow-elegant transition-all duration-300">
-            <CardContent className="p-8 text-center">
-              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Phone className="w-8 h-8 text-primary" />
-              </div>
-              <h3 className="text-xl font-bold text-foreground mb-4">Call Us</h3>
-              <p className="text-muted-foreground mb-4">
-                Speak directly with our communications experts.
-              </p>
-              <a 
-                href="tel:+15551234567"
-                className="text-primary hover:text-primary-glow font-semibold transition-colors"
-              >
-                (555) 123-4567
+                hello@strategicstory.works
               </a>
             </CardContent>
           </Card>
@@ -82,7 +64,12 @@ const ContactSection = () => {
               We believe every child deserves access to quality public schools, and every district deserves 
               communications support that reflects that commitment.
             </p>
-            <Button variant="hero" size="lg" className="text-lg px-8 py-6">
+            <Button 
+              variant="hero" 
+              size="lg" 
+              className="text-lg px-8 py-6"
+              onClick={() => window.location.href = 'mailto:hello@strategicstory.works'}
+            >
               Schedule a Consultation
             </Button>
           </div>

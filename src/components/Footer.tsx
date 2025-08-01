@@ -11,20 +11,33 @@ const Footer = () => {
           </div>
 
           <div>
-            <h4 className="text-lg font-semibold mb-4">Services</h4>
+            <h4 className="text-lg font-semibold mb-4">Strategic Communication Services</h4>
             <ul className="space-y-2 text-primary-foreground/80">
-              <li>Crisis Communications</li>
-              <li>Strategic Planning</li>
+              <li>Strategic Communication Planning</li>
+              <li>Communication Audit</li>
+              <li>Stakeholder Engagement Strategy</li>
+              <li>Crisis Communication Management</li>
+              <li>Emergency Communication Planning</li>
               <li>Reputation Management</li>
-              <li>Social Media Campaigns</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="text-lg font-semibold mb-4">Digital & Community Services</h4>
+            <ul className="space-y-2 text-primary-foreground/80">
+              <li>Social Media Strategy</li>
+              <li>Print and Digital Campaigns</li>
+              <li>Media Relations Management</li>
+              <li>Community Engagement Campaigns</li>
+              <li>Parent and Family Communication</li>
+              <li>Multicultural Communication</li>
             </ul>
           </div>
 
           <div>
             <h4 className="text-lg font-semibold mb-4">Contact</h4>
             <div className="space-y-2 text-primary-foreground/80">
-              <p>hello@strategicstoryworks.com</p>
-              <p>(555) 123-4567</p>
+              <p>hello@strategicstory.works</p>
               <p>NY Tri-State Area</p>
             </div>
           </div>
