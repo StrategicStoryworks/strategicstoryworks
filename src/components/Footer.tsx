@@ -12,7 +12,7 @@ const Footer = () => {
 
           <div>
             <h4 className="text-lg font-semibold mb-4">Strategic Communication Services</h4>
-            <ul className="space-y-2 text-primary-foreground/80">
+            <ul className="space-y-1 text-sm text-primary-foreground/80">
               <li>Strategic Communication Planning</li>
               <li>Communication Audit</li>
               <li>Stakeholder Engagement Strategy</li>
@@ -24,7 +24,7 @@ const Footer = () => {
 
           <div>
             <h4 className="text-lg font-semibold mb-4">Digital & Community Services</h4>
-            <ul className="space-y-2 text-primary-foreground/80">
+            <ul className="space-y-1 text-sm text-primary-foreground/80">
               <li>Social Media Strategy</li>
               <li>Print and Digital Campaigns</li>
               <li>Media Relations Management</li>
@@ -38,7 +38,6 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">Contact</h4>
             <div className="space-y-2 text-primary-foreground/80">
               <p>hello@strategicstory.works</p>
-              <p>NY Tri-State Area</p>
             </div>
           </div>
         </div>

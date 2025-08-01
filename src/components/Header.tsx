@@ -12,7 +12,9 @@ const Header = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <span className="text-2xl font-bold text-primary">Strategic Storyworks</span>
+            <Link to="/" className="text-2xl font-bold text-primary hover:text-primary/80 transition-colors">
+              Strategic Storyworks
+            </Link>
           </div>
 
           {/* Desktop Navigation */}
