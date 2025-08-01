@@ -42,7 +42,7 @@ const ContactSection = () => {
               </div>
               <h3 className="text-xl font-bold text-foreground mb-4">Our Location</h3>
               <p className="text-muted-foreground mb-4">
-                Serving districts nationwide from our NY tri-state area headquarters.
+                Serving districts nationwide from our NYC tri-state area headquarters.
               </p>
               <p className="text-primary font-semibold">
                 New York Tri-State Area
