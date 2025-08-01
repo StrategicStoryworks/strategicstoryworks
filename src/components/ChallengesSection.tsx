@@ -45,14 +45,38 @@ const ChallengesSection = () => {
             <div className="text-center">
               <div className="text-4xl font-bold text-primary mb-2">47.5%</div>
               <p className="text-muted-foreground">of families want weekly updates on their child's performance</p>
+              <a 
+                href="https://www.districtadministration.com/pr-newswire/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-xs text-primary hover:underline mt-1 block"
+              >
+                Source: PR Newswire/District Administration
+              </a>
             </div>
             <div className="text-center">
               <div className="text-4xl font-bold text-primary mb-2">40%</div>
               <p className="text-muted-foreground">receive regular guidance on supporting academic success</p>
+              <a 
+                href="#" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-xs text-primary hover:underline mt-1 block"
+              >
+                Source: National K-12 Family Communication Survey
+              </a>
             </div>
             <div className="text-center">
               <div className="text-4xl font-bold text-primary mb-2">83%</div>
               <p className="text-muted-foreground">of school communicators struggle with message overload</p>
+              <a 
+                href="#" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-xs text-primary hover:underline mt-1 block"
+              >
+                Source: Crisis to Connection Report
+              </a>
             </div>
           </div>
         </div>
