@@ -84,7 +84,12 @@ const WhyUsSection = () => {
             <p className="text-lg mb-8 opacity-80">
               Let's discuss how Strategic Storyworks can help you bridge the communication gap and transform your district's storytelling.
             </p>
-            <Button variant="accent" size="lg" className="text-lg px-8 py-6">
+            <Button 
+              variant="accent" 
+              size="lg" 
+              className="text-lg px-8 py-6"
+              onClick={() => window.open('https://calendar.app.google/EMk7kaYZYQZBvcJN9', '_blank')}
+            >
               Schedule Your Communication Assessment
             </Button>
           </div>

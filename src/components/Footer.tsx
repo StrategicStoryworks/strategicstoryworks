@@ -43,7 +43,12 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-primary-foreground/20 mt-8 pt-8 text-center text-primary-foreground/60">
-          <p>&copy; 2025 Strategic Storyworks. Strengthening public education through strategic communications.</p>
+          <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
+            <p>&copy; 2025 Strategic Storyworks. Strengthening public education through strategic communications.</p>
+            <a href="/privacy-policy" className="text-primary-foreground/60 hover:text-primary-foreground transition-colors text-sm">
+              Privacy Policy
+            </a>
+          </div>
         </div>
       </div>
     </footer>

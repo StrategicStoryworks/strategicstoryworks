@@ -115,7 +115,11 @@ const ChallengesSection = () => {
           <p className="text-lg text-muted-foreground mb-6 max-w-3xl mx-auto">
             Strategic Storyworks helps bridge the communication gap, transforming how school districts connect, engage, and inspire their communities.
           </p>
-          <Button variant="default" size="lg">
+          <Button 
+            variant="default" 
+            size="lg"
+            onClick={() => window.open('https://calendar.app.google/EMk7kaYZYQZBvcJN9', '_blank')}
+          >
             Schedule Your Communication Assessment
           </Button>
         </div>
