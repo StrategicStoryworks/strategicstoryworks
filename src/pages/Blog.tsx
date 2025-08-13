@@ -13,6 +13,8 @@ interface BlogPost {
   description: string;
   content: string;
   guid: string;
+  thumbnail?: string;
+  excerpt: string;
 }
 
 const Blog = () => {
@@ -37,14 +39,26 @@ const Blog = () => {
         const data = await response.json();
         
         if (data.status === 'ok') {
-          const formattedPosts = data.items.map((item: any) => ({
-            title: item.title,
-            link: item.link,
-            pubDate: item.pubDate,
-            description: item.description?.replace(/<[^>]*>/g, '').substring(0, 200) + '...',
-            content: item.content,
-            guid: item.guid
-          }));
+          const formattedPosts = data.items.map((item: any) => {
+            // Extract image from content
+            const imgMatch = item.content?.match(/<img[^>]+src="([^">]+)"/);
+            const thumbnail = imgMatch ? imgMatch[1] : item.thumbnail;
+            
+            // Create better excerpt
+            const cleanText = item.description?.replace(/<[^>]*>/g, '') || '';
+            const excerpt = cleanText.length > 300 ? cleanText.substring(0, 300) + '...' : cleanText;
+            
+            return {
+              title: item.title,
+              link: item.link,
+              pubDate: item.pubDate,
+              description: item.description,
+              content: item.content,
+              guid: item.guid,
+              thumbnail,
+              excerpt
+            };
+          });
           setPosts(formattedPosts);
         } else {
           throw new Error('RSS feed parsing failed');
@@ -128,9 +142,21 @@ const Blog = () => {
                 </Button>
               </div>
             ) : (
-              <div className="space-y-8">
+                <div className="space-y-8">
                 {posts.map((post, index) => (
-                  <Card key={post.guid || index} className="group hover:shadow-lg transition-all duration-300">
+                  <Card key={post.guid || index} className="group hover:shadow-lg transition-all duration-300 overflow-hidden">
+                    {post.thumbnail && (
+                      <div className="aspect-video overflow-hidden">
+                        <img 
+                          src={post.thumbnail} 
+                          alt={post.title}
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                          onError={(e) => {
+                            e.currentTarget.style.display = 'none';
+                          }}
+                        />
+                      </div>
+                    )}
                     <CardHeader>
                       <div className="flex items-center text-sm text-muted-foreground mb-2">
                         <Calendar className="h-4 w-4 mr-2" />
@@ -142,7 +168,7 @@ const Blog = () => {
                     </CardHeader>
                     <CardContent>
                       <p className="text-muted-foreground mb-6 leading-relaxed">
-                        {post.description}
+                        {post.excerpt}
                       </p>
                       <Button 
                         variant="outline" 
