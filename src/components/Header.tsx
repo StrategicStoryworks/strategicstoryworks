@@ -25,6 +25,9 @@ const Header = () => {
             <Link to="/why-us" className="text-foreground hover:text-primary transition-colors">
               Why Us
             </Link>
+            <Link to="/blog" className="text-foreground hover:text-primary transition-colors">
+              Blog
+            </Link>
             <a href="#contact" className="text-foreground hover:text-primary transition-colors">
               Contact
             </a>
@@ -63,6 +66,13 @@ const Header = () => {
               onClick={() => setIsMenuOpen(false)}
             >
               Why Us
+            </Link>
+            <Link
+              to="/blog"
+              className="block text-foreground hover:text-primary transition-colors"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Blog
             </Link>
             <a
               href="#contact"
