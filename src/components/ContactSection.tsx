@@ -68,7 +68,7 @@ const ContactSection = () => {
               variant="hero" 
               size="lg" 
               className="text-lg px-8 py-6"
-              onClick={() => window.location.href = 'mailto:hello@strategicstory.works'}
+              onClick={() => window.open('https://calendar.app.google/EMk7kaYZYQZBvcJN9', '_blank')}
             >
               Schedule a Consultation
             </Button>
